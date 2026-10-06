@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MARKX BUILDING AND CONSTRUCTION — quality building and construction services in Kumasi, Ghana.">
+  <title>MARKX BUILDING AND CONSTRUCTION</title>
+  <style>
+    :root{--gold:#f7bd22;--dark:#101214;--ink:#171a1d;--light:#f6f7f8;--muted:#667078}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:50;background:rgba(16,18,20,.97);color:#fff;border-bottom:1px solid #292d31}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:900}
+    .mark{width:48px;height:48px;border:3px solid var(--gold);display:grid;place-items:center;transform:skew(-8deg);position:relative}
+    .mark:before{content:"";width:23px;height:18px;border:3px solid var(--gold);border-bottom:0;position:absolute;top:11px;transform:rotate(45deg)}
+    .mark span{position:relative;color:var(--gold);font-size:12px;letter-spacing:1px;margin-top:23px}
+    .brand strong{display:block;font-size:20px;letter-spacing:.4px;line-height:1.05}
+    .brand small{display:block;font-size:9px;color:#ddd;letter-spacing:.6px;margin-top:4px}
+    .links{display:flex;gap:26px;align-items:center;font-weight:700;font-size:14px}
+    .links a:hover{color:var(--gold)}
+    .cta{background:var(--gold);color:#111;padding:12px 18px;border-radius:8px;font-weight:800}
+    .menu{display:none;background:none;border:0;color:#fff;font-size:28px}
+    .hero{background:linear-gradient(90deg,rgba(9,11,13,.94),rgba(9,11,13,.45)),url("assets/1000784506.jpg") center/cover;min-height:620px;color:#fff;display:flex;align-items:center}
+    .hero-content{max-width:690px;padding:80px 0}
+    .eyebrow{color:var(--gold);font-weight:900;letter-spacing:2px;font-size:14px;margin-bottom:12px}
+    h1{font-size:clamp(42px,7vw,78px);line-height:.98;text-transform:uppercase;letter-spacing:-2px;margin-bottom:20px}
+    h1 span{color:var(--gold)}
+    .hero p{font-size:19px;max-width:620px;color:#eef1f3;margin-bottom:28px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:14px 22px;border-radius:8px;font-weight:800;border:2px solid var(--gold)}
+    .btn.primary{background:var(--gold);color:#111}
+    .btn.secondary{color:#fff}
+    section{padding:78px 0}
+    .section-head{margin-bottom:38px}
+    .kicker{font-weight:900;color:var(--gold);letter-spacing:2px;font-size:13px}
+    h2{font-size:42px;line-height:1.1;margin:7px 0 12px}
+    .lead{color:var(--muted);max-width:700px}
+    .services{background:var(--light)}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #e4e7e9;border-radius:12px;padding:26px;box-shadow:0 8px 22px rgba(0,0,0,.05)}
+    .icon{width:48px;height:48px;border-radius:50%;background:var(--gold);display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+    .card h3{font-size:18px;margin-bottom:8px}
+    .card p{font-size:14px;color:var(--muted)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .about img{width:100%;height:430px;object-fit:cover;border-radius:14px}
+    .ticks{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:26px}
+    .tick{font-weight:800;display:flex;gap:10px;align-items:center}
+    .tick b{color:var(--gold);font-size:22px}
+    .gallery{background:var(--dark);color:#fff}
+    .gallery .lead{color:#c9ced2}
+    .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .photos img{width:100%;height:230px;object-fit:cover;border-radius:10px;display:block}
+    .contact{background:linear-gradient(135deg,#15181b,#090a0b);color:#fff}
+    .contact-box{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center}
+    .contact h2{color:#fff}
+    .contact p{color:#c9ced2}
+    .details{display:grid;gap:15px}
+    .detail{border-bottom:1px solid #333;padding-bottom:12px}
+    .detail small{display:block;color:var(--gold);font-weight:800}
+    footer{background:#070809;color:#bbb;padding:30px 0}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    .copyright{font-size:13px}
+    @media(max-width:900px){
+      .links{display:none}.menu{display:block}.grid{grid-template-columns:repeat(2,1fr)}
+      .about,.contact-box{grid-template-columns:1fr}.photos{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      nav{height:68px}.brand strong{font-size:16px}.brand small{font-size:8px}
+      .hero{min-height:590px}.hero p{font-size:16px}
+      section{padding:58px 0}h2{font-size:34px}.grid,.photos,.ticks{grid-template-columns:1fr}
+      .about img{height:300px}.photos img{height:240px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home" aria-label="MARKX home">
+        <div class="mark"><span>MX</span></div>
+        <div><strong>MARKX</strong><small>BUILDING AND CONSTRUCTION</small></div>
+      </a>
+      <div class="links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a class="cta" href="https://wa.me/233552067007">Chat on WhatsApp</a>
+      </div>
+      <button class="menu" aria-label="Menu" onclick="alert('Use the links above on a larger screen, or scroll through the page.')">☰</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow">WELCOME TO MARKX</div>
+      <h1><span>Building</span> Your Vision,<br>Creating Your Future.</h1>
+      <p>Quality building and construction services in Kumasi, Ghana. From foundations to finishing, we work to deliver strong, beautiful and durable projects.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://wa.me/233552067007?text=Hello%20MARKX%20BUILDING%20AND%20CONSTRUCTION%2C%20I%27d%20like%20a%20quotation.">Get a Quote</a>
+        <a class="btn secondary" href="#services">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-head"><div class="kicker">OUR SERVICES</div><h2>What We Do</h2><p class="lead">Reliable construction solutions for homes, renovations and building projects.</p></div>
+    <div class="grid">
+      <div class="card"><div class="icon">🏗</div><h3>Building Construction</h3><p>Quality construction work from foundation through structural stages.</p></div>
+      <div class="card"><div class="icon">🏠</div><h3>House Construction</h3><p>We help turn house plans and ideas into practical living spaces.</p></div>
+      <div class="card"><div class="icon">🔨</div><h3>Renovation & Remodeling</h3><p>Upgrade, repair and transform existing spaces.</p></div>
+      <div class="card"><div class="icon">🧱</div><h3>Block & Concrete Work</h3><p>Strong masonry and concrete work with attention to detail.</p></div>
+      <div class="card"><div class="icon">🏚</div><h3>Roofing</h3><p>Professional roofing support for new and existing buildings.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Plastering & Finishing</h3><p>Clean finishing work that gives buildings a polished appearance.</p></div>
+      <div class="card"><div class="icon">▦</div><h3>Tiling</h3><p>Floor and wall tiling for durable and attractive spaces.</p></div>
+      <div class="card"><div class="icon">🛠</div><h3>General Construction</h3><p>Flexible construction services tailored to your project.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <img src="assets/1000757087.jpg" alt="MARKX construction project">
+    <div>
+      <div class="kicker">ABOUT US</div>
+      <h2>MARKX BUILDING AND CONSTRUCTION</h2>
+      <p class="lead">We are committed to quality workmanship, dependable service and practical construction solutions. We work closely with clients to turn their ideas into well-built spaces.</p>
+      <div class="ticks">
+        <div class="tick"><b>✓</b> Quality workmanship</div>
+        <div class="tick"><b>✓</b> Reliable service</div>
+        <div class="tick"><b>✓</b> Attention to detail</div>
+        <div class="tick"><b>✓</b> Customer satisfaction</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="gallery">
+  <div class="container">
+    <div class="section-head"><div class="kicker">OUR PROJECTS</div><h2>Project Gallery</h2><p class="lead">A selection of construction progress and completed-work photos from MARKX projects.</p></div>
+    <div class="photos">
+      <img src="assets/project1.jpg" alt="MARKX building project">
+      <img src="assets/project2.jpg" alt="MARKX construction project">
+      <img src="assets/1000626678.jpg" alt="MARKX foundation project">
+      <img src="assets/1000757915.jpg" alt="MARKX blockwork project">
+      <img src="assets/1000758980.jpg" alt="MARKX building progress">
+      <img src="assets/1000784506.jpg" alt="MARKX construction site">
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-box">
+    <div>
+      <div class="kicker">GET IN TOUCH</div>
+      <h2>Ready to Start Your Project?</h2>
+      <p>Contact MARKX BUILDING AND CONSTRUCTION for enquiries, project discussions and quotations.</p>
+      <div class="buttons" style="margin-top:24px">
+        <a class="btn primary" href="https://wa.me/233552067007">Chat on WhatsApp</a>
+        <a class="btn secondary" href="tel:+233552067007">Call Us</a>
+      </div>
+    </div>
+    <div class="details">
+      <div class="detail"><small>PHONE / WHATSAPP</small>+233 55 206 7007</div>
+      <div class="detail"><small>EMAIL</small>asiedum07@gmail.com</div>
+      <div class="detail"><small>LOCATION</small>Kumasi, Ghana — Online business</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div><strong style="color:#fff">MARKX BUILDING AND CONSTRUCTION</strong><br><span class="copyright">Building Your Vision, Creating Your Future.</span></div>
+    <div class="copyright">© 2026 MARKX BUILDING AND CONSTRUCTION. All Rights Reserved.</div>
+  </div>
+</footer>
+</body>
+</html>
